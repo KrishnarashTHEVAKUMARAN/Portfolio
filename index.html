@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<div class="header">
+  <header>
+    <div class="navbar">
+        <div class="accueil">
+           <a href="">Accueil</a>
+        </div>
+        <div class="menu">
+            <ul>
+              <li><a href="competences.html">Competences</a></li>
+              <li><a href="#Formation">Formation</a></li>
+              <li><a href="#Projet">Projet</a></li>
+              <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div> 
+    </div>
+  </header>   
+</div> 
+
+<body>
+  <div class="slideshow-container">
+    <div class="mySlides">
+          <div class="app-text">
+            <h2><span>Bonjour,</span></h2>
+            <h2>Je suis Krishnarash THEVAKUMARAN</h2>
+            <h2>Etudiant en L3 MIAGE, developpeur debutant</h2>
+          </div>
+    </div>
+    <div class="mySlides">
+          <div class="app-text">
+            <h3>À propos</h3>
+            <p>Diplômé dynamique et rigoureux passionné par le développement des applications informatiques, des pages web et par la maintenance informatique. Bonnes connaissances des langages de programmation tel que C, MySQL, Java/Javascript , HTML/CSS, XML/XSLT et PHP.
+            Possédant comme centre d’intérêt l’analyse des appareils High-tech. Disponible a partir du mois d’avril.</p>
+          </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+  <section class="section intro" id="Formation">
+    <div class="container">
+      <h1>Formation</h1>
+    </div>
+  </section>
+
+  <center><section class="timeline">
+    <ol>
+      <li>
+        <div>
+          <strong><time>2016-2018</time></strong><br> 
+          <u>Baccalaureat STI2D <br>au lycée d'Eugène Ionesco</u><br>
+          Mention <strong>ASSEZ BIEN</strong> <br>
+          <em>&#9679; Savoir utiliser un modele de comportement (UML)</em>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong><time>2018-2020</time></strong><br> 
+          <u>DUT INFORMATIQUE <br>à l'IUT de Vélizy</u><br>
+          <em>&#9679; Creation et gestion de la base de données</em><br>
+          <em>&#9679; Developpement des programmes et des sites web (PHP, C, JAVA, ...)</em>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong><time>2020-2021</time></strong><br>  
+          <u>L3 MIAGE <br>à l'universite de Paris Nanterre</u><br>
+          <em>&#9679; Analyse des données avec langage SAS + SQL</em><br>
+          <em>&#9679; Developpement Web en Python (Framework Django)</em><br>
+          <em>&#9679; Introduction aux systèmes d'informations</em>
+        </div>
+      </li>
+      <li></li>
+    </ol>
+  </section></center>
+
+  <section id="Projet">
+    <div class="wrapper">
+      <h1>Mes projets</h1>
+      <div class="projet">
+        <div class="chaque_projet">
+          <div class="projet_img">
+            <img src="image/jeuVie.PNG">
+          </div>
+          <h3>Jeu de la Vie (Simulation cellule)</h3>
+          <p class="langage">JAVA</p>
+          <p>Le jeu de la vie est un jeu de simulation créé par Horton Conway. En première année de mon cursus en DUT informatique, nous avons eu comme objectif de créer cette application. Elle était sous la forme d’un damier qui contient plein de cellules en vie ou mortes. À chaque génération, les cellules restent en vie ou meurent en fonction des conditions. Comme par exemple: Une cellule en vie ne possédant qu’une cellule voisine en vie meurt par isolement. On devait aussi respecter certaines fonctionnalités données comme par exemple : avoir un bouton avancer de pas à pas ou en avance rapide et un bouton pause pour arrêter l’avance rapide. Cette application est codée en java sous le logiciel Eclipse.</p>
+        </div>
+        <div class="chaque_projet">
+          <div class="projet_img">
+            <img src="image/MisaCrea.PNG">
+          </div>
+          <h3>Site E-Commerce pour Misa Crea</h3>
+          <p class="langage">PHP_MySQL(XAMPP)_HTML/CSS</p>
+          <p>Ce projet consistait à programmer une application web d'E-Commerce à l’intention d’un auto-entrepreneur artisan. Le site que nous avons programmé devait permettre à l’administrateur d'exécuter les fonctionnalités suivantes: se connecter et se déconnecter, changer son mot de passe et son profil, gérer les commandes et les demandes des clients, gérer ses stocks et de mettre en ligne ses nouveaux produits. Il devait aussi permettre aux clients de s’inscrire (le login devra être son mail), de récupérer son mot de passe oublié, de changer ses coordonnées sur son profil, de voir son panier et les produits proposés par le site, d’enregistrer un panier provisoire et de procéder au paiement en ligne. La mise en place de cette application web a pour but de faciliter le travail de l’artisan. Ce site est codé en PHP et HTML/CSS/JS sous l'application Visual Studio et Sublime Text. Nous avons utilisé XAMPP pour la gestion de base de données avec PHPMyAdmin.</p></div>
+        <div class="chaque_projet">
+          <div class="projet_img">
+            <img src="image/bulletin.PNG">
+          </div>
+          <h3>Site pour la gestion de note</h3>
+          <p class="langage">DJANGO_MySQL(XAMPP)_HTML/CSS</p>
+          <p>Le site de gestion de note est mon projet de premier semestre de mon L3 MIAGE. Ce projet a pour but de se familiariser avec le framework python DJANGO. Nous avons utilisé l'architecture MVC (Model, View and Controller) pour la réalisation de ce site web. Par exemple: models.py comportait les classes nécessaires pour l'exécution de cette application comme les classes élèves et matières. Et views.py permettait d'afficher les pages html. Le site avait pour objectif d'aider l'administrateur de gérer les notes des élèves comme ajouter, modifier, supprimer les notes et afficher le bulletin et la décision de jury des élèves sélectionnés par l'admin (ADMIS, DEFAILLANT et les mentions). Ce site est code en Django et HTML/CSS sous l'IDE PyCharm.</p>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+</body>
+
+<div id="footer">
+  <div class="social-icons">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/krishnarash-thevakumaran-310a231a1/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/KrishnarashTHEVAKUMARAN"><i class="fa fa-github" id="github"></i></a></li>
+      </ul>
+  </div>
+  <div class="copy-right">
+      <p class="email"> thevakumarankrishnarash@gmail.com </p>
+      <p>&copy; Copyright 2020</p>  
+  </div>
+</div>
+
+
+<script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    } 
+</script>
+
+</html>	

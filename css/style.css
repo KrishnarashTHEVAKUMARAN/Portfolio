@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: black;
+}
+
+.header{
+    position: relative;
+    height: 100%;
+}
+
+.header .navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.accueil a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.menu ul {
+    margin-left: 65px;
+    top: 6.15%;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 35px; 
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.menu ul li a:hover{
+    color: red;
+}
+
+.mySlides {
+  padding: 80px;
+  text-align: center;
+}
+
+.app-text h2{
+    position: static;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 28px;
+}
+
+.app-text h2 span{
+    color: #367195;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.app-text h3{
+    font-size: 30px;
+    position: relative;
+    color: black;
+    margin-top: 28px;
+    font-weight: 500;
+    height: 7vh;
+}
+
+.social-icons{
+    position: absolute;
+    right: 50px;
+    bottom:15px; 
+}
+
+.social-icons ul li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.social-icons ul li a{
+    display: block;
+    background: #73b9ee;
+    color: #fff;
+    text-align: center;
+    padding: 12px 17px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.social-icons ul li a:hover{
+    background: #366c95;
+    color: #fff;
+}
+
+.copy-right{
+    position: absolute;
+    left: 50px;
+    bottom:15px; 
+}
+
+.copy-right p{
+    color: #fff;
+}
+
+#footer{
+    background-color:black;
+    position:relative;
+    bottom:0px;
+    width:100%;
+    height:80px;
+}
+
+.slideshow-container {
+  position: relative;
+  background: #c8e9ff;
+  height: 50vh;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #c8e9ff;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+ 
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+  overflow-x: scroll;
+}
+ 
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 400px;
+  height: 3px;
+  background: black;
+}
+ 
+.timeline ol li:last-child {
+  width: 280px;
+}
+ 
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+ 
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(65% + 2px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: red;
+}
+ 
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+ 
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+ 
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.section .container {
+  width: 100%;
+  text-align: center;
+}
+
+.section h1 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+#Projet{
+  padding: 1px;
+  background: #d500ff;
+  font-family: sans-serif;
+}
+
+.wrapper{
+  margin-top: 20px;
+}
+
+.wrapper h1{
+  margin-top: 0px;
+  margin-bottom: 80px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.projet{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.projet .chaque_projet{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.projet .chaque_projet h3{
+  color: #81c644;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.projet .chaque_projet p.langage{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.projet .chaque_projet .projet_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background: #fff;
+}
+
+.projet .chaque_projet .projet_img img{
+  width: 200px;
+  height: 100px;
+  padding: 5px;
+}
+
+#CV{
+  height: 100vh;
+}
+
+@media screen and (max-width: 1281px) {
+  .app-text h2{
+      margin-top: 26px;
+  }
+
+  .app-text h3{
+      margin-top: 22px;
+  }
+
+  .active, .dot:hover {
+    background-color: red;
+  }
+   
+  .timeline ol li {
+    width: 225px;
+  }
+   
+  .timeline ol li:last-child {
+    width: 250px;
+  }
+   
+  .timeline ol li:not(:first-child) {
+    margin-left: 13px;
+  }
+
+  .timeline ol li div {
+    left: calc(32% + 15px);
+  }
+
+}
+
+@media screen and (max-width: 801px) {
+  .app-text h2{
+      margin-top: 26px;
+  }
+
+  .app-text h3{
+      margin-top: 26px;
+      height: 4.5vh;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .accueil a{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .app-text h2{
+      margin-top: 30px;
+      font-size: 24px;
+  }
+
+  .app-text h3{
+      margin-top: 22px;
+      margin-bottom: 40px;
+      font-size: 1.5rem;
+      height: 1vh;
+  }
+
+  .app-text p{
+      margin-bottom: 40px;
+      font-size: 0.75rem;
+  }
+
+  .copy-right{
+    left: 30px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .social-icons{
+    position: absolute;
+    right: 30px;
+    bottom:15px; 
+  }
+
+  .social-icons ul li{
+    width: 40px;
+    height: 50px;
+  }
+
+  .social-icons ul li a{
+    display: block;
+    background: #73b9ee;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+
+  .timeline ol li {
+    width: 185px;
+  }
+
+  .timeline ol li div {
+    left: calc(20% + 10px);
+  }
+
+}
+
+@media screen and (max-width: 770px) {
+  .app-text h2{
+      margin-top: 29px;
+  }
+
+  .app-text h3{
+    margin-top: 22px;
+  }
+
+  .copy-right{
+    left: 30px;
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  .social-icons ul li{
+    width: 30px;
+    height: 50px;
+  }
+
+  .social-icons ul li a{
+    padding: 8px 7.5px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 669px) {
+  .accueil a{
+    font-size: 16px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .menu ul{
+    margin-bottom: 10px;
+    margin-left: 48px;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: -14px;
+  }
+
+  .app-text h2{
+      margin-top: 22px;
+  }
+
+  .app-text h3{
+    margin-top: 22px;
+  }
+
+}
+
+/* Iphone 6/7/8 Plus ios 11 */
+@media screen and (max-width: 415px) {
+  .accueil a{
+    font-size: 15px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .menu ul{
+    margin-bottom: 10px;
+    margin-left: 48px;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 10px;
+    font-weight: 430;
+    letter-spacing: 0.5px;
+    margin-left: -14px;
+  }
+
+  .app-text p{
+      margin-bottom: 10px;
+      font-size: 0.5rem;
+  }
+
+  .app-text h2{
+      margin-top: 25px;
+      font-size: 1rem;
+  }
+
+  .app-text h3{
+    margin-top: 22px;
+    font-size: 1rem;
+  }
+
+}
+
+/* Iphone 6/7/8 ios 11 */
+@media screen and (max-width: 376px) {
+  .accueil a{
+    font-size: 11px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .menu ul li a{
+    font-size: 8px;
+    letter-spacing: 0.5px;
+    margin-left: -12px;
+  }
+
+  .app-text h2{
+      margin-top: 17px;
+      font-size: 1rem;
+  }
+
+  .app-text h3{
+      margin-top: 8px;
+  }
+
+}
+
+/* Iphone X/XS ios 12 */
+@media screen and (max-device-width: 376px) {
+  .app-text h2{
+      margin-top: 20px;
+      font-size: 1rem;
+  }
+
+  .app-text h3{
+      margin-top: 26px;
+  }
+}
+
+/* GALAXY S9/S9+ Android 9.0 */
+@media screen and (max-width: 361px) {
+  .accueil a{
+    font-size: 11px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .app-text h2{
+      margin-top: 26px;
+      font-size: 1rem;
+  }
+
+  .app-text h3{
+      margin-top: 10px;
+      font-size: 1rem;
+      height: 0.75vh;
+  }
+
+}
+
+@media (orientation: landscape) and (max-device-width: 812px){
+  .app-text h2{
+      margin-top: -20px;
+      font-size: 1rem;
+      height: 12vh;
+  }
+
+  .app-text h2 span{
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .app-text h3{
+      margin-top: -50px;
+      font-size: 1rem;
+  }
+}
+
